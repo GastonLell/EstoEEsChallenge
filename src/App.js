@@ -1,9 +1,15 @@
+import React from "react";
+
+import Router from "./router";
+import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
   return (
-    <div className="App">
-      EstoEs
-    </div>
+    <ChakraProvider>
+      <div className="App">
+        <Router />
+      </div>
+    </ChakraProvider>
   );
 }
 
