@@ -27,7 +27,7 @@ const Form = ({
     description: "",
     manager: "",
     assigned: "",
-    status: "",
+    status: "Enabled",
   },
 }) => {
   //destructuring context
@@ -90,7 +90,7 @@ const Form = ({
 
       history.push('/')
     }
-    //reset formulario
+    //reiniciar formulario
     setProject({
       projectName: "",
       description: "",
@@ -155,10 +155,10 @@ const Form = ({
         <FormControl pb={4}>
           <FormLabel mb={0}>Status</FormLabel>
           <Select onChange={handleChange} value={status} name="status">
-            <option value="true">
+            <option selected value="Enabled">
               Enabled
             </option>
-            <option value="false">Disabled</option>
+            <option value="Disabled">Disabled</option>
           </Select>
         </FormControl>
         <Button type="submit" variant="estoEs">
