@@ -7,6 +7,7 @@ export const theme = extendTheme({
   },
 
   colors: {
+    
     bgGray: {
       100: "rgba(0, 0, 0, 0,02)"
     },
